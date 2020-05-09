@@ -3,8 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-    <title>小学一年级	语文 看动漫解古诗- 传承网</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1,minimum-scale=1, maximum-scale=1">
+    <title>小学一年级	语文 每日拼音课（初级）- 传承网</title>
     <link rel="stylesheet" href="http://sta.qinxue.com/mobile/dist/css/bootstrap.css?v=202004081500">
     <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/index.css?v=202004081500">
     <link rel="stylesheet" href="http://sta.qinxue.com/mobile/css/xueyuan.css?v=202004081500">
@@ -91,8 +91,44 @@
     </div>
 </div>
 <div class="i_top_xl_bj">&nbsp;</div>
-
-
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".i_top_more").click(function(){
+            $(".i_top_xl").animate({right:"0px"});
+            $(".i_top_xl_bj").show();
+        });
+        $(".i_top_xl_bj").click(function(){
+            $(".i_top_xl").animate({right:"-300px"});
+            $(".i_top_xl_bj").hide();
+        });
+    });
+</script>
+<div id="jqAjaxLoadingTip" class="ajaxLoading"></div>
+<div id="jqSessTipPannel" class="sessTipPannel"><a class="sessTipClose" href="javascript:void(0)" onclick="document.getElementById('jqSessTipPannel').style.display='none';">x</a><div id="jqSessTip"></div></div><script>
+    $(document).ready(function(){
+        $(".member_bottom_xiala").click(function(){
+            $(".member_bottom_box").slideToggle();
+        });
+    });
+</script>
+<script >
+    var PLAY_TUID = "30";
+    var PLAY_TUCID = "9";
+    var URL_LOADPLAY ="http://m.qinxue.com/index.php?r=chapter/loadplay";
+    var PREV_CHAPTER = "";
+    var NEXT_CHAPTER = "http://m.qinxue.com/30-10.html";
+    function qxplayerLast() {
+        var strVideoUrlLastTime = "http://m.qinxue.com/index.php?r=video/setLastVideoTime&tuid=30&tucid=9";
+        ajax.init()
+            .setUrl( strVideoUrlLastTime )
+            .setData({})
+            .setIsTip( false )
+            .setCbSuccess(  )
+            .setCbError(  )
+            .preRun()
+            .run();
+    }
+</script>
 <style>
     .white_content {
         display: none;
@@ -157,7 +193,6 @@
         </div>
     </div>
 </div>
-<div class="container-fluid">
     <div class="row">
         <div class="col-xs-12 kecheng_jieshao" style="border-bottom: 1px solid #eeeeee; margin-bottom: 0px;">
             <div style="font-size: 18px;">看动漫解古诗</div>
